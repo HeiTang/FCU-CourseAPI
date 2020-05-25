@@ -72,17 +72,20 @@ r = r.replace('\\"','"' )
 r = r.replace(':"{',': {' )
 r = r.replace('}]}"}','}]}}')
 
-r = json.loads(r)                                     
+r = json.loads(r) 
+r = json.dumps(r , ensure_ascii=False , indent=4 , separators=(',', ': '))    
 
-print("選課代碼:",r['d']['items'][0]['scr_selcode'])
-print("課程編碼:",r['d']['items'][0]['sub_id3'])
-print("課程名稱:",r['d']['items'][0]['sub_name'])
-print("學分:",r['d']['items'][0]['scr_credit'])
-print("必選修:",r['d']['items'][0]['scj_scr_mso'])
-print("開課班級:",r['d']['items'][0]['cls_name'])
-print("上課時間/上課教室/授課教師:",r['d']['items'][0]['scr_period'])
-print("開放名額:",r['d']['items'][0]['scr_precnt'])
-print("實收名額:",r['d']['items'][0]['scr_acptcnt'])
+print(r)
+
+# print("選課代碼:",r['d']['items'][0]['scr_selcode'])
+# print("課程編碼:",r['d']['items'][0]['sub_id3'])
+# print("課程名稱:",r['d']['items'][0]['sub_name'])
+# print("學分:",r['d']['items'][0]['scr_credit'])
+# print("必選修:",r['d']['items'][0]['scj_scr_mso'])
+# print("開課班級:",r['d']['items'][0]['cls_name'])
+# print("上課時間/上課教室/授課教師:",r['d']['items'][0]['scr_period'])
+# print("開放名額:",r['d']['items'][0]['scr_precnt'])
+# print("實收名額:",r['d']['items'][0]['scr_acptcnt'])
 
 
 # url = "http://service005.sds.fcu.edu.tw/favicon.ico"
