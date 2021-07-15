@@ -5,7 +5,12 @@
        \______  /\____/|____/ |__|  /____  >\___  >____|__  /____|   |___|
               \/                         \/     \/        \/              
 - 此專案用來說明[逢甲大學程檢索系統](https://coursesearch03.fcu.edu.tw/)的查詢方式。
+
 - 給有需要查詢或取得課程資訊的人，或是直接取用 [FCU-CourseData](https://github.com/HeiTang/FCU-CourseData) 專案中的資料。
+
+- 友善連結
+   - [FCU-CourseData](https://github.com/HeiTang/FCU-CourseData)：逢甲大學所有課程資訊。
+   - [FCU-ClassID](https://github.com/HeiTang/FCU-ClassID)：逢甲大學的所有學院 ID 、 系所 ID 和班級 ID。
 
 ## 查詢格式
 ### 依開課系所查詢
